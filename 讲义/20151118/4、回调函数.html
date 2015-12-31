@@ -74,7 +74,7 @@
         }
         //不兼容的话我们自己for循环进行处理
         for (var i = 0; i < this.length; i++) {
-            //每一次循环都执行传递进来的回调函数callBack,并且让里面的this变为context,而且还要给这个函数传递三个参数的值:当前项,当前项的索引,原始数组
+        //每一次循环都执行传递进来的回调函数callBack,并且让里面的this变为context,而且还要给这个函数传递三个参数的值:当前项,当前项的索引,原始数组
             callBack.call(context, this[i], i, this);
         }
     };
